@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Eppu Normaali - Songs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+		var lyricNumber = 1;
+		var finnishTitle1 = 'Kitara, taivas ja tähdet';
+		var finnishLyric1 = "Suru soittaa mielen mustin koskettimin<br/>vahingossa vaikka valkoista koskettikin<br/>Markalla ostan maailman, levyautomaatista kitaran<br/>Kuulen äänen, kuulen äänen sen sen sen<br/>enää sure en<br/><br/>Kun kitara soi, ei itkeä saa<br/>kun kitara soi, ei itkeä saa<br/><br/>Tuhat keikkaa jo mieltäni piristin<br/>takahuoneessa kieltäni kiristin<br/>Yhä kireämmin soivat kuudestaan,<br/>kielet kitarani yhä uudestaan<br/>Soitin yhden poikki, pian toisenkin<br/>silti jatkaa sain, ihmiset nauroivat ne vain<br/><br/>Sähköt sain sähkökitaraan<br/>sähköt vain, en muuta tarvitsekaan<br/>Soitan loppuun asti kappaleen<br/>ylleni taivaat teen tähtineen<br/><br/>Kun kitara soi, ei itkeä saa<br/>kun kitara soi, ei itkeä saa<br/><br/>Siis älä itke pieni tyttö baarin nurkassa tuo<br/>sointi kitaran sinulle lohtunsa suo<br/>Se täyttää välin korvien, siellä soittaa Juha Torvinen<br/>soittaa näppäilemällä osin<br/>automaatista käsin tosin<br/><br/>Kun kitara soi, ei itkeä saa<br/>kun kitara soi, ei itkeä saa<br/><br/>Sähköt sain sähkökitaraan...";
+		var englishTitle1 = 'The Guitar, The Sky and the Stars';
+		var englishLyric1 = "Sadness accidentally plays with the black keys of the mind<br/>even though it tried to touch a white one.<br/>I'll buy the world with one mark, a guitar out of a jukebox.<br/>I'll hear the sound, I'll hear the sound of it.<br/>I won't be sad anymore.<br/><br/>When you hear the guitar, you mustn't cry.<br/>When you hear the guitar, you mustn't cry.<br/><br/>A thousand gigs made my mind brighter.<br/>In the backstage I tightened my string.<br/>All six of them play even more tighter,<br/>the strings of my guitar again and again.<br/>I played until one of them broke, soon another one did too.<br/>Still they let me continue, the people just laughed.<br/><br/>I got power in my electric guitar.<br/>Just power, that's all I need.<br/>I'll play the song to the end.<br/>You make the skies and their stars above me.<br/><br/>When you hear the guitar, you mustn't cry.<br/>When you hear the guitar, you mustn't cry.<br/><br/>So don't cry little girl in the corner of the bar,<br/>the sound of the guitar will bring you the comfort.<br/>It'll fill the between the ears, the one who plays is Juha Torvinen.<br/>He's partially playing by picking,<br/>out of the jukebox, though.<br/><br/>When you hear the guitar, you mustn't cry.<br/>When you hear the guitar, you mustn't cry.<br/><br/>I got power in my electric guitar...";
+		var finnishTitle2 = "Vuonna '85'";
+		var finnishLyric2 = "Silmämme avataan ja suljetaan<br/>Me maailmanpyörällä kuljetaan<br/>Ylöspäin ja alas ja ympäri hei<br/>Maailmanpyöräni vei<br/>Elämäni oli tylsää niin<br/>Sitä tylsyyttä katselin silmät kiin<br/>Silmäni avasin ja maailman näin<br/>Maailmaani katsomaan jäin<br/><br/>On vuosi '85<br/>kauan on aikaa on siis<br/>Siitä kun viimeksi ylöspäin<br/>pyörähdin pyörässä näin<br/><br/>{refrain}:<br/>Täällä metrossa maailman lauluja kirjoitan,<br/>Lauluja siitä mitä mä nään ja mitä tunnen sisällä pään<br/>Ja missä kuljin milloinkin, mietin nyt, silloinkin,<br/>Mietin kenelle lauluni teen, missä oon, minne meen<br/><br/>Näin poikanne pollella ratsastaa<br/><br/>Konsertoin toisin sanoen<br/>Rämpytän lanttia anoen<br/>Kuinkahan pitkälle poikanne näin<br/>Kävelee seinää päin<br/>Kirjettä kotiin kirjoitin<br/>Ei pysy enää kädessä soitin<br/>Vielä viimeinen sana vaan<br/>Sitten menen kanavaan<br/><br/>On vuosi '85, kauan on aikaa siis<br/>Siitä kun viimeksi ylöspäin pyörähdin pyörässä näin<br/><br/>Täällä metrossa maailman lauluja kirjoitan<br/>Lauluja siitä mitä mä nään ja mitä tunnen sisällä pään<br/>Ja missä kuljin milloinkin, mietin nyt, silloinkin<br/>Mietin kenelle lauluni teen, missä oon, minne meen<br/><br/>Näin poikanne maailmaa katsastaa<br/><br/>On vuosi '85, kauan on aikaa siis<br/>Siitä kun viimeksi ylöspäin, pyöräni pyörässä näin<br/><br/>Näin poikanne pollella ratsastaa<br/><br/>Täällä metrossa maailman lauluja kirjoitan,<br/>lauluja siitä mitä mä nään ja mitä tunnen sisällä pään<br/><br/>Ei lopu täältä polle<br/>Ei amfetamiini<br/>Täältä kukkaloistosta Amsterdamin<br/>Ojat pullollaan pitkätukkiaan<br/>Antaa kaikkien kukkien kukkia vaan<br/><br/>Ja missä kuljin milloinkin, mietin nyt, silloinkin,<br/>Mietin kenelle lauluni teen, missä oon, minne meen<br/><br/>{refrain}";
+		var englishTitle2 = "In the year '85";
+		var englishLyric2 = "We open and close our eyes<br/>we move with the Ferris wheel<br/>Upwards and down and around, hey!<br/>My Ferris wheel went<br/>My life was so boring<br/>That boredom I looked at with my eyes closed<br/>I opened my eyes and I saw the world<br/>I stayed looking at my world<br/><br/>It is the year '85<br/>So it has been a long time<br/>Since I went up last time<br/>Spun in a wheel, like this<br/><br/>{Refrain}<br/>In here, in the metro of the world, I write my songs<br/>Songs about what I see and feel inside my head<br/>and wherever and whenever I walked, I think now, even then,<br/>To whom I write my songs, where I am, where I go<br/><br/>This is how your son uses the smack<br/><br/>Performing, so to speak<br/>Strumming, begging for change<br/>For how long can your son<br/>walk against a wall<br/>I was writing a letter back home<br/>I couldn't hold the instrument anymore<br/>Still one last word,<br/>and then I go to the canal<br/><br/>It is the year '85<br/>So it has been a long time<br/>Since I went up last time<br/>Spun in a wheel, like this<br/><br/>In here, in the metro of the world, I write my songs<br/>Songs about what I see and feel inside my head<br/>and wherever and whenever I walked, I think now, even then,<br/>To whom I write my songs, where I am, where I go<br/><br/>This is how your son inspects<br/><br/>In here, in the metro of the world, I write my songs<br/>Songs about what I see and feel inside my head<br/><br/>This is how your son uses the smack<br/><br/>The smack won't end here,<br/>neither will the amphetamine<br/>Among the blooming flowers in Amsterdam<br/>Brooks full of long-haired ones,<br/>Let the flowers bloom<br/><br/>and wherever and whenever I walked, I think now, even then,<br/>To whom I write my songs, where I am, where I go<br/><br/>In here, in the metro of the world, I write my songs<br/>Songs about what I see and feel inside my head<br/>and wherever and whenever I walked, I think now, even then,<br/>To whom I write my songs, where I am, where I go";
+		var finnishTitle3 = "Tahroja paperilla";
+		var finnishLyric3 = "Tiedän että on yö, kun saavut kotiisi pimeään<br/>Yksinäisyys lyö, sanomatta nimeään<br/>Kun luet kirjeeni kaiun kuulet<br/>Tahrat näet joita sateeksi luulet<br/><br/>Kuljen ulkona valossa, kasvoillani voin tuntea tuulen<br/>Ei sitä tuntunut talossa, johon palaa en koskaan, luulen<br/>En ole menossa minnekkään<br/>Ei missään tule minun luokseni, minun vuokseni<br/><br/>(refrain:)<br/>Vain tahroja paperilla, älä siis suutu<br/>Ei niistä asiat miksikään muutu<br/>Ei se että meillä oli retkemme, eikä se että meillä oli hetkemme<br/>Voi tuuli kylmästi kutittaa selkää, se eteenpäin työntää, älä siis pelkää<br/>Älä huoli siitä, sillä meillä oli retkemme, aa aa aa..<br/>Muista, että meillä oli.. hetkemme<br/><br/>Kutsun saaneena tulin, lähdin kuin varas, säikähdin<br/>Viimein kun itseeni tarttuneen, tajusin varttuneen<br/>Imin sut kuiviin, tarttui mun huiviin tuoksusi<br/>Teit saman minulle, juoksusi annan anteeksi sinulle<br/><br/>(refrain)<br/><br/>Vain tahroja paperilla älä siis suutu<br/>Ei niistä asiat miksikään muutu";
+		var englishTitle3 = "Stains on Paper";
+		var englishLyric3 = "I know it'll be nighttime when you enter your dark home<br/>Solitude strikes without telling its name<br/>When you read my letter you'll hear an echo<br/>You'll see the stains that you'll mistake for rain<br/><br/>I walk outside in the light, I can feel the wind on my face<br/>I could not feel it in the house to which I will never return, I think<br/>I'm not going anywhere<br/>Nowhere, come to me, for my sake<br/><br/>(refrain:)<br/>Just stains of paper, so don't be angry<br/>They do not change anything<br/>Not the fact that we had our trips, or that we had our moments<br/>The wind can tickle the back coldly, it pushes you onward, so don't be afraid<br/>Pay it no mind, 'cause we had our trips, aa aa aa...<br/>Remember, we had our moments<br/><br/>I came invited and left like a thief, finally frightened<br/>When I realized the one who clung to me had grown<br/>I sucked you dry, your smell clung to my scarf<br/>You did the same to me, I forgive your disloyalty<br/><br/>(refrain)<br/><br/>Just stains on paper, so don't be angry<br/>They do not change anything";
+		
+		function playAdd() {
+			document.getElementById('anuncio').play();
+		}
+		
+		function updateInfo(lyricNumber) {
+		
+			switch (lyricNumber) {
+				case 1:
+					document.getElementById('finnishLyric').innerHTML = finnishLyric1;
+					document.getElementById('englishLyric').innerHTML = englishLyric1;
+					document.getElementById('finnishTitle').innerHTML = finnishTitle1;
+					document.getElementById('englishTitle').innerHTML = englishTitle1;
+					document.getElementById('video').src = 'video/video1.mp4';
+					break;
+				case 2:
+					document.getElementById('finnishLyric').innerHTML = finnishLyric2;
+					document.getElementById('englishLyric').innerHTML = englishLyric2;	
+					document.getElementById('finnishTitle').innerHTML = finnishTitle2;
+					document.getElementById('englishTitle').innerHTML = englishTitle2;
+					document.getElementById('video').src = 'video/video2.mp4';					
+					break;
+				case 3: 
+					document.getElementById('finnishLyric').innerHTML = finnishLyric3;
+					document.getElementById('englishLyric').innerHTML = englishLyric3;
+					document.getElementById('finnishTitle').innerHTML = finnishTitle3;
+					document.getElementById('englishTitle').innerHTML = englishTitle3;
+					document.getElementById('video').src = 'video/video3.mp4';
+					break;
+			}
+
+		}
+		
+  </script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Eppu Normaali</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#" onclick='updateInfo(1)'>Kitara, taivas ja tähdet</a></p>
+      <p><a href="#" onclick='updateInfo(2)'>Vuonna '85</a></p>
+      <p><a href="#" onclick='updateInfo(3)'>Tahroja paperilla</a></p>	
+    </div>
+
+	<div class="col-sm-8 text-left"> 
+		<div class="your-centered-div">
+			<video id="video" style="display:block; margin: 0 auto;" width="50%" height="30%" controls poster="image/eppu_normaali_logo.png">
+				You browser does not support video playback.
+				<source src="" type="video/mp4" />
+			</video>
+		</div>
+		<div class="col-sm-6 text-left"> 
+		  <h3 id='finnishTitle'></h1>
+		  <p>Finnish</p>
+		  <p id='finnishLyric'></p>	
+		</div>
+		 <div class="col-sm-6 text-left"> 
+		  <h3 id='englishTitle'></h1>	
+		  <p>English</p>
+		  <p id='englishLyric'></p>      
+		</div>
+	</div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <video id="anuncio" style="display:block; margin: 0 auto;" width="100%" height="100%" controls poster="image/oldspice.jpg" autoplay="autoplay">
+				You browser does not support video playback.
+				<source src="video/anuncio.webm" type="video/webm" />
+		</video>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+	updateInfo(1);
+</script>
+<footer class="container-fluid text-center">
+<img src="image/footer.png" alt="Perkele!" height="100">
+</footer>
+</body>
+</html>
